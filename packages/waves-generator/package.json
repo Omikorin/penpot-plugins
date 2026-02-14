@@ -1,0 +1,35 @@
+{
+  "name": "waves-generator",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "tsc && vite build",
+    "lint": "biome lint --write src",
+    "format": "biome format --write src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Omikorin/penpot-plugins.git",
+    "directory": "packages/waves-generator"
+  },
+  "author": "Michał Korczak (https://omikor.in)",
+  "license": "AGPL-3.0-only",
+  "dependencies": {
+    "@penpot/plugin-styles": "catalog:",
+    "alpinejs": "catalog:",
+    "d3-scale": "catalog:",
+    "d3-shape": "catalog:"
+  },
+  "devDependencies": {
+    "@penpot/plugin-types": "catalog:",
+    "@types/alpinejs": "catalog:",
+    "@types/d3-scale": "catalog:",
+    "@types/d3-shape": "catalog:",
+    "typescript": "catalog:",
+    "vite": "catalog:",
+    "vite-live-preview": "catalog:",
+    "vite-plugin-handlebars": "catalog:"
+  }
+}

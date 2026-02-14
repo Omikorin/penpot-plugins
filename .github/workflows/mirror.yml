@@ -26,7 +26,7 @@ jobs:
           - codeberg.org
           - git.disroot.org
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           fetch-depth: '0'
       - uses: pixta-dev/repository-mirroring-action@v1

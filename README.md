@@ -1,38 +1,16 @@
-# 🌊 Waves Generator
+# Penpot Plugins
 
-Create beautiful, customizable wave patterns for your web designs!
+Some nice Penpot plugins.
 
-![Plugin Preview](screenshot.png)
+## Monorepo structure
 
-## ✨ Why Waves Generator?
+This project is a monorepo managed with Bun workspaces. It contains the following packages:
 
-- **Multiple Wave Types**: Choose from smooth, stepped, or peaked wave patterns
-- **Natural look**: Randomize wave patterns by changing complexity level
-- **Live Preview**: Instant visual feedback as you adjust settings
-- **Easy Export**: Download your waves as SVG files ready for use in any project
+| Package                                        | Description                |
+| ---------------------------------------------- | -------------------------- |
+| [waves-generator](./packages/waves-generator/) | Generates randomized waves |
 
-## 🎯 Key Features
-
-### Wave Styles
-- Smooth sine waves for flowing animations
-- Stepped patterns for geometric designs
-- Peaked waves for sharp, dynamic looks
-
-### Rich Customization
-- Adjustable wave complexity
-- Up/down direction control
-- Quick randomize option
-
-## 🚀 Getting Started
-
-1. Visit the [Penpot Plugins Hub](https://penpot.app/penpothub/plugins/waves-generator)
-2. Click the "Install" button for Waves Generator
-3. Alternative installation: Use this manifest link in Penpot's plugin installer:
-   ```
-   https://penpot-waves-generator.pages.dev/manifest.json
-   ```
-
-## 💻 Development
+## Development
 
 Want to contribute or run locally? Here's how:
 
@@ -41,27 +19,29 @@ Want to contribute or run locally? Here's how:
 bun install
 
 # Start development server with live preview
-bun run dev
+bun run dev:waves
 
 # Build for production
-bun run build
+bun run build:waves
 ```
 
 Next, install the plugin using this link:
+
 ```
 http://localhost:4400/manifest.local.json
 ```
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Feel free to submit issues and pull requests.
 
-## 🙏 Acknowledgments
+## Acknowledgments
+
 Thanks to Feather Icons for their beautiful open source icons.
 
-## 📄 License
+## License
 
-This project is licensed under the [ISC license](./LICENSE).
+This project is licensed under the [AGPL 3.0 license](./LICENSE).
 
 ---
 
