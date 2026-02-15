@@ -1,0 +1,32 @@
+{
+  "name": "beautiful-qrcode",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "tsc && vite build",
+    "lint": "biome lint --write src",
+    "format": "biome format --write src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Omikorin/penpot-plugins.git",
+    "directory": "packages/beautiful-qrcode"
+  },
+  "author": "Michał Korczak (https://omikor.in)",
+  "license": "AGPL-3.0-only",
+  "dependencies": {
+    "@penpot/plugin-styles": "catalog:",
+    "alpinejs": "catalog:",
+    "qr-code-styling": "catalog:"
+  },
+  "devDependencies": {
+    "@penpot/plugin-types": "catalog:",
+    "@types/alpinejs": "catalog:",
+    "typescript": "catalog:",
+    "vite": "catalog:",
+    "vite-live-preview": "catalog:",
+    "vite-plugin-handlebars": "catalog:"
+  }
+}

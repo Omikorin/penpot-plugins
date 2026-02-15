@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{> head }}
+  </head>
+  <body>
+    <main>
+      {{> preview }}
+      <section class="controls-section">
+        {{> controls/qr-content}}
+        {{> controls/margin}}
+        {{> controls/logo }}
+        {{> controls/background }}
+        {{> controls/pattern }}
+        {{> controls/corners }}
+        {{> controls/file-type }}
+        {{> controls/buttons }}
+      </section>
+      {{> footer }}
+    </main>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
