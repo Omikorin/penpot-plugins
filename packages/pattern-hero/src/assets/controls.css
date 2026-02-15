@@ -1,0 +1,17 @@
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-12);
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .with-icon {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-12);
+  }
+}

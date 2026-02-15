@@ -8,6 +8,22 @@
         "@biomejs/biome": "^2.3.15",
       },
     },
+    "packages/pattern-hero": {
+      "name": "pattern-hero",
+      "version": "0.0.0",
+      "dependencies": {
+        "@penpot/plugin-styles": "catalog:",
+        "alpinejs": "catalog:",
+      },
+      "devDependencies": {
+        "@penpot/plugin-types": "catalog:",
+        "@types/alpinejs": "catalog:",
+        "typescript": "catalog:",
+        "vite": "catalog:",
+        "vite-live-preview": "catalog:",
+        "vite-plugin-handlebars": "catalog:",
+      },
+    },
     "packages/waves-generator": {
       "name": "waves-generator",
       "version": "0.0.0",
@@ -245,6 +261,8 @@
     "neo-async": ["neo-async@2.6.2", "", {}, "sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw=="],
 
     "p-defer": ["p-defer@4.0.1", "", {}, "sha512-Mr5KC5efvAK5VUptYEIopP1bakB85k2IWXaRC0rsh1uwn1L6M0LVml8OIQ4Gudg4oyZakf7FmeRLkMMtZW1i5A=="],
+
+    "pattern-hero": ["pattern-hero@workspace:packages/pattern-hero"],
 
     "picocolors": ["picocolors@1.1.1", "", {}, "sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA=="],
 

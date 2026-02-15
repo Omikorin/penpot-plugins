@@ -4,8 +4,12 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "build:pattern": "bun run --filter 'pattern-hero' build",
+    "dev:pattern": "bun run --filter 'pattern-hero' dev",
+    "install:pattern": "bun install --filter 'pattern-hero'",
     "build:waves": "bun run --filter 'waves-generator' build",
     "dev:waves": "bun run --filter 'waves-generator' dev",
+    "install:waves": "bun install --filter 'waves-generator'",
     "format": "bun run --filter '*' format",
     "lint": "bun run --filter '*' lint"
   },

@@ -1,0 +1,35 @@
+<div class="form-group">
+  <label for="group" id="group-label" class="with-icon body-m">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="18"
+      height="18"
+      viewBox="0 0 16 16"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="1.33px"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <path
+        d="M14.276 13.61c.25-.251.39-.59.39-.943V5.333A1.332 1.332 0 0 0 13.333 4h-6L6 2H2.666c-.353 0-.692.14-.942.391-.251.25-.391.589-.391.942v9.334A1.333 1.333 0 0 0 2.666 14h10.667c.354 0 .693-.14.943-.39Z"
+      ></path>
+    </svg>
+    Group Nodes
+  </label>
+  <label
+    class="switch-container"
+    x-data="switchComponent"
+    data-store-key="config.group"
+  >
+    <input
+      type="checkbox"
+      class="checkbox-hidden"
+      aria-labelledby="group-label"
+      id="group"
+      x-model="checked"
+      @change="updateChecked"
+    />
+    <span class="switch-slider"></span>
+  </label>
+</div>
