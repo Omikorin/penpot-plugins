@@ -63,8 +63,8 @@
     },
   },
   "catalog": {
-    "@penpot/plugin-styles": "1.3.2",
-    "@penpot/plugin-types": "1.3.2",
+    "@penpot/plugin-styles": "1.4.2",
+    "@penpot/plugin-types": "1.4.2",
     "@types/alpinejs": "^3.13.11",
     "@types/d3-scale": "^4.0.9",
     "@types/d3-shape": "^3.1.7",
@@ -151,9 +151,9 @@
 
     "@esbuild/win32-x64": ["@esbuild/win32-x64@0.27.3", "", { "os": "win32", "cpu": "x64" }, "sha512-4uJGhsxuptu3OcpVAzli+/gWusVGwZZHTlS63hh++ehExkVT8SgiEf7/uC/PclrPPkLhZqGgCTjd0VWLo6xMqA=="],
 
-    "@penpot/plugin-styles": ["@penpot/plugin-styles@1.3.2", "", {}, "sha512-/xeJpAujCoeN2oMxNsr31EcCpZ2ztmy8LIvG19GEXgwdaRXLWjh6P5FNptk7jBybOMxeI6o18Woy8oB0j+LqYQ=="],
+    "@penpot/plugin-styles": ["@penpot/plugin-styles@1.4.2", "", {}, "sha512-/Rn6xy80W+mxAi6j5/SOiNY8P0qHMB1WW+j+nyZajecFSnVGPzSWOiMcIDH+Jtsz7Xpmd5AICpgVM0xjechQig=="],
 
-    "@penpot/plugin-types": ["@penpot/plugin-types@1.3.2", "", {}, "sha512-f0kmmZaFNs9sGtSmqmSJQYCs5Qt+KYgTD8RneUjL+Dv+zfNQnd5e4L+iHSYFJ4HWvcDvTiK7F/gya7PwMTu7WA=="],
+    "@penpot/plugin-types": ["@penpot/plugin-types@1.4.2", "", {}, "sha512-O8wU6RSYE8bIVU7g8cSTYi32ppxs3R13dq7X3Nn9tmDaJjBOKOBpVLuoRPIp3fJC65fv8/7om0sdrtFoL5v19g=="],
 
     "@rollup/rollup-android-arm-eabi": ["@rollup/rollup-android-arm-eabi@4.57.1", "", { "os": "android", "cpu": "arm" }, "sha512-A6ehUVSiSaaliTxai040ZpZ2zTevHYbvu/lDoeAteHI8QnaosIzm4qwtezfRg1jOYaUmnzLX1AOD6Z+UJjtifg=="],
 
