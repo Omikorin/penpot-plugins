@@ -4,9 +4,9 @@ export type PluginConfig = {
   rows: number;
   columns: number;
   padding: number;
-  repeat: boolean;
-  shuffle: boolean;
-  group: boolean;
+  repeatNodes: boolean;
+  shuffleNodes: boolean;
+  groupNodes: boolean;
 };
 
 export interface CreatePatternEvent {
@@ -20,7 +20,7 @@ export interface CreatePatternEvent {
 export type PluginUIEvent = CreatePatternEvent;
 
 export interface ThemeChangeEvent {
-  type: 'themechange';
+  type: 'theme';
   content: Theme;
 }
 

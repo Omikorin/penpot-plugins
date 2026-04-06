@@ -1,25 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    {{> head }}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pattern Hero</title>
   </head>
   <body>
-    <main>
-      {{> header }}
-      <section>
-        <div class="controls">
-          {{> controls/rows }}
-          {{> controls/columns }}
-          {{> controls/padding }}
-          {{> controls/repeat-nodes }}
-          {{> controls/shuffle-nodes }}
-          {{> controls/group-nodes }}
-        </div>
-        {{> buttons }}
-      </section>
-      {{> footer }}
-    </main>
-
-    <script type="module" src="/src/main.ts"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/ui/main.tsx"></script>
   </body>
 </html>

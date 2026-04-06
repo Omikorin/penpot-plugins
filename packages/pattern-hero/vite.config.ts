@@ -1,26 +1,24 @@
-import { resolve } from 'node:path';
+import path from 'node:path';
 import { defineConfig } from 'vite';
 import livePreview from 'vite-live-preview';
-import handlebars from 'vite-plugin-handlebars';
+import solid from 'vite-plugin-solid';
 
 export default defineConfig({
   plugins: [
+    solid(),
     livePreview({
       reload: true,
-      config: {
-        build: {
-          sourcemap: true,
-        },
-      },
-    }),
-    handlebars({
-      partialDirectory: resolve(__dirname, 'src/partials'),
     }),
   ],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, 'src'),
+    },
+  },
   build: {
     rollupOptions: {
       input: {
-        plugin: 'src/plugin.ts',
+        plugin: 'src/plugin/index.ts',
         index: './index.html',
       },
       output: {

@@ -18,14 +18,13 @@
   "license": "AGPL-3.0-only",
   "dependencies": {
     "@penpot/plugin-styles": "catalog:",
-    "alpinejs": "catalog:"
+    "solid-js": "catalog:"
   },
   "devDependencies": {
     "@penpot/plugin-types": "catalog:",
-    "@types/alpinejs": "catalog:",
     "typescript": "catalog:",
     "vite": "catalog:",
     "vite-live-preview": "catalog:",
-    "vite-plugin-handlebars": "catalog:"
+    "vite-plugin-solid": "catalog:"
   }
 }

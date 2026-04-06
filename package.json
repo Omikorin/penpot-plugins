@@ -40,7 +40,8 @@
     "typescript": "^5.9.3",
     "vite": "^7.3.1",
     "vite-live-preview": "^0.4.0",
-    "vite-plugin-handlebars": "^2.0.0"
+    "vite-plugin-handlebars": "^2.0.0",
+    "vite-plugin-solid": "^2.11.10"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.3.15"
