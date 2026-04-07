@@ -2,6 +2,7 @@ import { type Component, createSignal, onCleanup, onMount } from 'solid-js';
 import type { PluginEvent } from '@/common/types';
 import { Buttons, ConfigFields } from '@/ui/components/features';
 import { Footer, Header } from '@/ui/components/layout';
+import styles from './App.module.css';
 
 const App: Component = () => {
   const searchParams = new URLSearchParams(window.location.search);
@@ -22,10 +23,10 @@ const App: Component = () => {
   });
 
   return (
-    <main data-theme={theme()}>
+    <main data-theme={theme()} class={styles.main}>
       <Header />
-      <section>
-        <div class="controls">
+      <section class={styles.section}>
+        <div class={styles.controls}>
           <ConfigFields />
         </div>
         <Buttons />

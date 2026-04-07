@@ -1,13 +1,14 @@
 import { For } from 'solid-js';
 import { NumberInput, Toggle } from '@/ui/components/ui';
 import { config, handleInput, settingsManifest } from '@/ui/stores/config';
+import styles from './ConfigFields.module.css';
 
 export const ConfigFields = () => {
   return (
     <>
       <For each={settingsManifest.numbers}>
         {(item) => (
-          <div class="form-group">
+          <div class={styles.formGroup}>
             <NumberInput
               value={config[item.key as keyof typeof config] as number}
               onInput={(val) => handleInput(item.key, val)}
@@ -20,7 +21,7 @@ export const ConfigFields = () => {
 
       <For each={settingsManifest.toggles}>
         {(item) => (
-          <div class="form-group">
+          <div class={styles.formGroup}>
             <Toggle
               checked={config[item.key as keyof typeof config] as boolean}
               onChange={(val) => handleInput(item.key, val)}

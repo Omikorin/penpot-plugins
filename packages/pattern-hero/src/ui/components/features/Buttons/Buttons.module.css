@@ -1,10 +1,10 @@
-.button-group {
+.container {
   margin-top: auto;
   display: flex;
   justify-self: center;
   gap: var(--spacing-12);
+}
 
-  button {
-    width: 100%;
-  }
+.primaryButton {
+  width: 100%;
 }

@@ -4,10 +4,7 @@
     "paths": {
       "@/*": ["./src/*"]
     },
-    "typeRoots": [
-      "./node_modules/@types",
-      "./node_modules/@penpot"
-    ],
+    "typeRoots": ["./node_modules/@types", "./node_modules/@penpot"],
     "types": ["plugin-types"]
   },
   "include": ["src"],

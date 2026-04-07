@@ -1,0 +1,7 @@
+.header {
+  margin-top: var(--spacing-8);
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  column-gap: var(--spacing-12);
+}

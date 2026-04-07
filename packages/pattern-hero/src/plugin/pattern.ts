@@ -1,11 +1,11 @@
 import type { CreatePatternEvent } from '@/common/types';
+import { shuffleArray } from '@/common/utils';
 import { arrangeNodesInGrid } from '@/plugin/grid-layout';
 import {
   cleanupSelection,
   createClones,
   finalizeSelection,
 } from '@/plugin/nodes';
-import { shuffleArray } from '@/plugin/utils';
 
 export const handleCreatePattern = (content: CreatePatternEvent['content']) => {
   const { config, name } = content;

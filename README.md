@@ -6,9 +6,11 @@ Some nice Penpot plugins.
 
 This project is a monorepo managed with Bun workspaces. It contains the following packages:
 
-| Package                                        | Description                |
-| ---------------------------------------------- | -------------------------- |
-| [waves-generator](./packages/waves-generator/) | Generates randomized waves |
+| Package                                          | slug      | Description                 |
+| ------------------------------------------------ | --------- | --------------------------- |
+| [pattern-hero](./packages/pattern-hero/)         | `pattern` | Creates repeatable patterns |
+| [beautiful-qrcode](./packages/beautiful-qrcode/) | `qrcode`  | Generates vibrant QR codes  |
+| [waves-generator](./packages/waves-generator/)   | `waves`   | Generates randomized waves  |
 
 ## Development
 

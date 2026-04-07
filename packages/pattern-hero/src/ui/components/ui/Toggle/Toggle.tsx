@@ -1,4 +1,5 @@
 import { createUniqueId, type ParentComponent } from 'solid-js';
+import styles from './Toggle.module.css';
 
 interface ToggleProps {
   checked: boolean;
@@ -10,7 +11,7 @@ export const Toggle: ParentComponent<ToggleProps> = (props) => {
 
   return (
     <>
-      <label for={id} id={`${id}-label`} class="with-icon body-m">
+      <label for={id} id={`${id}-label`} class={`${styles.withIcon} body-m`}>
         {props.children}
       </label>
       <label class="switch-container">

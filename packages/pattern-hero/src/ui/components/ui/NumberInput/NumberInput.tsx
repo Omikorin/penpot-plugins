@@ -1,4 +1,5 @@
 import { createUniqueId, type ParentComponent } from 'solid-js';
+import styles from './NumberInput.module.css';
 
 interface NumberInputProps {
   value: number;
@@ -14,7 +15,7 @@ export const NumberInput: ParentComponent<NumberInputProps> = (props) => {
 
   return (
     <>
-      <label for={id} id={`${id}-label`} class="with-icon body-m">
+      <label for={id} id={`${id}-label`} class={`${styles.withIcon} body-m`}>
         {props.children}
       </label>
       <div>

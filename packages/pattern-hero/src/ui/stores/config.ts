@@ -1,4 +1,5 @@
 import { createStore } from 'solid-js/store';
+import type { PluginConfig } from '@/common/types';
 import {
   ColumnsIcon,
   FolderIcon,
@@ -6,8 +7,7 @@ import {
   RepeatIcon,
   RowsIcon,
   ShuffleIcon,
-} from '@/assets/icons';
-import type { PluginConfig } from '@/common/types';
+} from '@/ui/components/icons';
 import { emitCreatePattern } from '@/ui/services/messenger';
 
 export const [config, setConfig] = createStore<PluginConfig>({

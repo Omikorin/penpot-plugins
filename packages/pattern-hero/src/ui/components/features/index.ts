@@ -1,2 +1,2 @@
-export { Buttons } from './Buttons';
-export { ConfigFields } from './ConfigFields';
+export { Buttons } from './Buttons/Buttons';
+export { ConfigFields } from './ConfigFields/ConfigFields';

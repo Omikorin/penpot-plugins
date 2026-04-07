@@ -1,2 +1,2 @@
-export { NumberInput } from './NumberInput';
-export { Toggle } from './Toggle';
+export { NumberInput } from './NumberInput/NumberInput';
+export { Toggle } from './Toggle/Toggle';
