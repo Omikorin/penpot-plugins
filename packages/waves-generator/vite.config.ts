@@ -2,15 +2,11 @@ import path from 'node:path';
 
 import solid from '@solidjs/vite-plugin';
 import { defineConfig } from 'vite';
-import livePreview from 'vite-live-preview';
+
+import { livePreview } from '../../tools/live-preview';
 
 export default defineConfig({
-  plugins: [
-    solid(),
-    livePreview({
-      reload: true,
-    }),
-  ],
+  plugins: [solid(), livePreview()],
   resolve: {
     alias: {
       '@': path.resolve(import.meta.dirname, 'src'),

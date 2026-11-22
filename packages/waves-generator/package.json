@@ -29,7 +29,6 @@
     "@types/d3-scale": "catalog:",
     "@types/d3-shape": "catalog:",
     "typescript": "catalog:",
-    "vite": "catalog:",
-    "vite-live-preview": "catalog:"
+    "vite": "catalog:"
   }
 }

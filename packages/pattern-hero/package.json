@@ -25,7 +25,6 @@
     "@penpot/plugin-types": "catalog:",
     "@solidjs/vite-plugin": "catalog:",
     "typescript": "catalog:",
-    "vite": "catalog:",
-    "vite-live-preview": "catalog:"
+    "vite": "catalog:"
   }
 }
