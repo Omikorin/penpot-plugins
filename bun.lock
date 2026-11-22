@@ -63,8 +63,8 @@
     },
   },
   "catalog": {
-    "@penpot/plugin-styles": "1.4.2",
-    "@penpot/plugin-types": "1.4.2",
+    "@penpot/plugin-styles": "1.6.0",
+    "@penpot/plugin-types": "1.6.0",
     "@solidjs/vite-plugin": "^3.0.1",
     "@solidjs/web": "^2.0.3",
     "@types/d3-scale": "^4.0.9",
@@ -173,9 +173,9 @@
 
     "@oxlint/binding-win32-x64-msvc": ["@oxlint/binding-win32-x64-msvc@1.94.0", "", { "os": "win32", "cpu": "x64" }, "sha512-I3eZdd4bemIJQDNv9XDV/FEofDxIoN32tzCv98wIgLdW05EqxZb5hF4AwPrRzHD/dQhl0n7KgPy5AQPfM0HWrA=="],
 
-    "@penpot/plugin-styles": ["@penpot/plugin-styles@1.4.2", "", {}, "sha512-/Rn6xy80W+mxAi6j5/SOiNY8P0qHMB1WW+j+nyZajecFSnVGPzSWOiMcIDH+Jtsz7Xpmd5AICpgVM0xjechQig=="],
+    "@penpot/plugin-styles": ["@penpot/plugin-styles@1.6.0", "", {}, "sha512-vmIDYbQqIcTPxYer7/C1nmo5QJyErTI4ZcFNELuENMnLcs+UeAFWtqsMENGoY6jfldEujbUwoglS9hBKI11x5Q=="],
 
-    "@penpot/plugin-types": ["@penpot/plugin-types@1.4.2", "", {}, "sha512-O8wU6RSYE8bIVU7g8cSTYi32ppxs3R13dq7X3Nn9tmDaJjBOKOBpVLuoRPIp3fJC65fv8/7om0sdrtFoL5v19g=="],
+    "@penpot/plugin-types": ["@penpot/plugin-types@1.6.0", "", {}, "sha512-jrKBY97CT0RLsJTbZTGWr3PYVKZimPNpFD4IlAQuvnrxtTuSwCEisSF3qx+ARnQeBUzgXivvHN3pB+eXCPGT/A=="],
 
     "@rolldown/binding-android-arm-eabi": ["@rolldown/binding-android-arm-eabi@1.2.19", "", { "os": "android", "cpu": "arm" }, "sha512-e+Ebe0WT+9tbXmNKPIiC8YrWAHYwug3m6i4p3rZGGulfZri1jtI4HslT+OZnFf/OIHowWF71DTlHwXBP2SiA7A=="],
 

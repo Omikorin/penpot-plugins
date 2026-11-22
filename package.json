@@ -37,8 +37,8 @@
   },
   "packageManager": "bun@1.4.5",
   "catalog": {
-    "@penpot/plugin-styles": "1.4.2",
-    "@penpot/plugin-types": "1.4.2",
+    "@penpot/plugin-styles": "1.6.0",
+    "@penpot/plugin-types": "1.6.0",
     "@solidjs/web": "^2.0.3",
     "@solidjs/vite-plugin": "^3.0.1",
     "@types/d3-scale": "^4.0.9",
