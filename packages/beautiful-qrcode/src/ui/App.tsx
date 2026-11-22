@@ -11,7 +11,8 @@ import {
   QRContent,
 } from '@/ui/components/features';
 import { Footer } from '@/ui/components/layout';
-import { getInitialTheme } from '@/ui/utils/theme';
+import { isFromParent } from '@/ui/utils/messages';
+import { getInitialTheme, isTheme } from '@/ui/utils/theme';
 
 import styles from './App.module.css';
 
@@ -19,7 +20,10 @@ const App: Component = () => {
   const [theme, setTheme] = createSignal(getInitialTheme());
 
   function handleThemeChange(event: MessageEvent<PluginEvent>) {
-    if (event.data.type === 'themechange') setTheme(event.data.content);
+    if (!isFromParent(event)) return;
+    if (event.data?.type === 'themechange' && isTheme(event.data.content)) {
+      setTheme(event.data.content);
+    }
   }
 
   onSettled(() => {

@@ -1,6 +1,7 @@
 import type { Theme } from '@penpot/plugin-types';
 
-const isTheme = (value: string | null): value is Theme => value === 'light' || value === 'dark';
+export const isTheme = (value: string | null): value is Theme =>
+  value === 'light' || value === 'dark';
 
 /**
  * Penpot passes the theme in the iframe URL. Manifest v1 puts it in the query
