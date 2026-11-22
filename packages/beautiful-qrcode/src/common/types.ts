@@ -3,30 +3,19 @@ import type { FileExtension, GradientType } from 'qr-code-styling';
 
 export type FillType = 'single' | GradientType;
 
-export interface PluginConfig {
-  fileType: FileExtension;
-  logoFilename: string;
-  background: {
-    fill: FillType;
-  };
-  dots: {
-    fill: FillType;
-  };
-  cornersDot: {
-    fill: FillType;
-  };
-  cornersSquare: {
-    fill: FillType;
-  };
-}
-
-export type UpdateGradientType =
+export type ElementType =
   | 'background'
   | 'dots'
   | 'cornersDot'
   | 'cornersSquare';
 
-export type UpdateColorOptionsType = `${UpdateGradientType}Options`;
+export interface QRElement {
+  fill: FillType;
+  color: string;
+  colorSecondary?: string;
+  rotation?: number;
+  style?: string;
+}
 
 // Penpot integration types
 export interface InsertSVGEvent {

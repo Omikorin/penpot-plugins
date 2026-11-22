@@ -1,10 +1,11 @@
-import { resolve } from 'node:path';
+import path from 'node:path';
+import solid from '@solidjs/vite-plugin';
 import { defineConfig } from 'vite';
 import livePreview from 'vite-live-preview';
-import handlebars from 'vite-plugin-handlebars';
 
 export default defineConfig({
   plugins: [
+    solid(),
     livePreview({
       reload: true,
       config: {
@@ -13,14 +14,16 @@ export default defineConfig({
         },
       },
     }),
-    handlebars({
-      partialDirectory: resolve(__dirname, 'src/partials'),
-    }),
   ],
+  resolve: {
+    alias: {
+      '@': path.resolve(import.meta.dirname, 'src'),
+    },
+  },
   build: {
     rollupOptions: {
       input: {
-        plugin: 'src/plugin.ts',
+        plugin: 'src/plugin/index.ts',
         index: './index.html',
       },
       output: {

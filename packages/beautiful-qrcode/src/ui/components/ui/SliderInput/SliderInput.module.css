@@ -1,0 +1,14 @@
+.group {
+  display: flex;
+}
+
+.group input[type='range'] {
+  flex: 1 1;
+  margin-top: 0.2rem;
+}
+
+.group input[type='number'] {
+  flex: 0 0 auto;
+  margin-left: 20px;
+  width: 55px;
+}

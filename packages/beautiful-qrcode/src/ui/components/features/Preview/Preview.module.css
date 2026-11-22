@@ -1,0 +1,33 @@
+.section {
+  padding: var(--spacing-8);
+  box-shadow: 0 2px 4px var(--preview-shadow);
+}
+
+[data-theme='light'] .section {
+  --preview-shadow: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='dark'] .section {
+  --preview-shadow: rgba(255, 255, 255, 0.1);
+}
+
+.preview {
+  background-color: var(--background-quaternary);
+  border-radius: var(--spacing-20);
+  display: flex;
+  justify-content: center;
+}
+
+.preview svg,
+.preview canvas {
+  width: 150px;
+  height: 150px;
+}
+
+.preview svg {
+  padding: 10px 0;
+}
+
+.preview canvas {
+  padding: 10px;
+}

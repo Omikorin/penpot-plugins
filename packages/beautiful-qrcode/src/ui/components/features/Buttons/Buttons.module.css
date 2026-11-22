@@ -1,0 +1,9 @@
+.container {
+  display: grid;
+  gap: var(--spacing-8);
+  margin-top: var(--spacing-20);
+}
+
+.container button {
+  width: 100%;
+}

@@ -1,0 +1,4 @@
+.divider {
+  border: 1px solid var(--background-secondary);
+  width: 100%;
+}

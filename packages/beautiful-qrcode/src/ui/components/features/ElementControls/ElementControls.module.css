@@ -1,0 +1,37 @@
+.controls {
+  display: grid;
+  gap: var(--spacing-12);
+}
+
+.colorRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pickers {
+  display: flex;
+  gap: var(--spacing-4);
+}
+
+.picker {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: none;
+  border-radius: var(--spacing-4);
+  cursor: pointer;
+}
+
+.picker::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.picker::-webkit-color-swatch {
+  border: 1px solid var(--foreground-primary);
+  border-radius: var(--spacing-4);
+}
+
+.picker::-webkit-color-swatch:hover {
+  border: 0.125rem solid var(--accent-primary);
+}

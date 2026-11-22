@@ -1,0 +1,14 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.controls {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  display: grid;
+  gap: var(--spacing-12);
+  align-content: start;
+}
