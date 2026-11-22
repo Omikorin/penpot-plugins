@@ -46,6 +46,6 @@
     "vite-plugin-solid": "^2.11.12"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.4.10"
+    "@biomejs/biome": "^2.6.8"
   }
 }
