@@ -6,6 +6,7 @@ dist
 dist-ssr
 *.local
 *.tgz
+*.tsbuildinfo
 
 # logs
 logs
