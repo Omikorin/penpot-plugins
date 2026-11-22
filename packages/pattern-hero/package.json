@@ -1,7 +1,14 @@
 {
   "name": "pattern-hero",
-  "private": true,
   "version": "0.0.0",
+  "private": true,
+  "license": "AGPL-3.0-only",
+  "author": "Michał Korczak (https://omikor.in)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Omikorin/penpot-plugins.git",
+    "directory": "packages/pattern-hero"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite build --watch",
@@ -9,13 +16,6 @@
     "lint": "oxlint --fix src",
     "format": "oxfmt src"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Omikorin/penpot-plugins.git",
-    "directory": "packages/pattern-hero"
-  },
-  "author": "Michał Korczak (https://omikor.in)",
-  "license": "AGPL-3.0-only",
   "dependencies": {
     "@penpot/plugin-styles": "catalog:",
     "@solidjs/web": "catalog:",

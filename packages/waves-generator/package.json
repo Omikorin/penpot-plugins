@@ -1,7 +1,14 @@
 {
   "name": "waves-generator",
-  "private": true,
   "version": "0.0.0",
+  "private": true,
+  "license": "AGPL-3.0-only",
+  "author": "Michał Korczak (https://omikor.in)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Omikorin/penpot-plugins.git",
+    "directory": "packages/waves-generator"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite build --watch",
@@ -9,19 +16,12 @@
     "lint": "oxlint --fix src",
     "format": "oxfmt src"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Omikorin/penpot-plugins.git",
-    "directory": "packages/waves-generator"
-  },
-  "author": "Michał Korczak (https://omikor.in)",
-  "license": "AGPL-3.0-only",
   "dependencies": {
     "@penpot/plugin-styles": "catalog:",
     "@solidjs/web": "catalog:",
-    "solid-js": "catalog:",
     "d3-scale": "catalog:",
-    "d3-shape": "catalog:"
+    "d3-shape": "catalog:",
+    "solid-js": "catalog:"
   },
   "devDependencies": {
     "@penpot/plugin-types": "catalog:",

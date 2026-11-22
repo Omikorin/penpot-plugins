@@ -1,7 +1,16 @@
 {
   "name": "root",
-  "private": true,
   "version": "0.0.0",
+  "private": true,
+  "license": "AGPL-3.0-only",
+  "author": "Michał Korczak (https://omikor.in)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Omikorin/penpot-plugins.git"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
   "type": "module",
   "scripts": {
     "build:pattern": "bun run --filter 'pattern-hero' build",
@@ -16,16 +25,11 @@
     "format": "bun run --filter '*' format",
     "lint": "bun run --filter '*' lint"
   },
-  "workspaces": [
-    "packages/*"
-  ],
-  "packageManager": "bun@1.3.11",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Omikorin/penpot-plugins.git"
+  "devDependencies": {
+    "oxfmt": "^0.79.0",
+    "oxlint": "^1.94.0"
   },
-  "author": "Michał Korczak (https://omikor.in)",
-  "license": "AGPL-3.0-only",
+  "packageManager": "bun@1.3.11",
   "catalog": {
     "@penpot/plugin-styles": "1.4.2",
     "@penpot/plugin-types": "1.4.2",
@@ -40,9 +44,5 @@
     "typescript": "^7.0.2",
     "vite": "^8.3.8",
     "vite-live-preview": "^0.4.0"
-  },
-  "devDependencies": {
-    "oxfmt": "^0.79.0",
-    "oxlint": "^1.94.0"
   }
 }

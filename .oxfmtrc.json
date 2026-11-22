@@ -3,5 +3,5 @@
   "singleQuote": true,
   "useTabs": false,
   "sortImports": true,
-  "ignorePatterns": ["dist", "bun.lock"]
+  "ignorePatterns": ["dist", "bun.lock", "manifest.json", "manifest.local.json"]
 }

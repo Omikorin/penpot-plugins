@@ -1,7 +1,8 @@
 import path from 'node:path';
+
+import solid from '@solidjs/vite-plugin';
 import { defineConfig } from 'vite';
 import livePreview from 'vite-live-preview';
-import solid from '@solidjs/vite-plugin';
 
 export default defineConfig({
   plugins: [
