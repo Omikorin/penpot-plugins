@@ -1,4 +1,4 @@
-import { createStore } from 'solid-js/store';
+import { createStore } from 'solid-js';
 import type { CurveType, DirectionType } from '@/common/types';
 import { downloadSvg } from '@/ui/services/download';
 import { emitCreateWave } from '@/ui/services/messenger';
@@ -17,16 +17,29 @@ export const [wave, setWave] = createStore({
 export const wavePath = () =>
   generateWavePath(wave.data, wave.curve, wave.direction);
 
-export const setCurve = (curve: CurveType) => setWave('curve', curve);
+export const setCurve = (curve: CurveType) => {
+  setWave((s) => {
+    s.curve = curve;
+  });
+};
 
-export const setDirection = (direction: DirectionType) =>
-  setWave('direction', direction);
+export const setDirection = (direction: DirectionType) => {
+  setWave((s) => {
+    s.direction = direction;
+  });
+};
 
-export const randomize = () =>
-  setWave('data', generateRandomData(wave.complexity));
+export const randomize = () => {
+  setWave((s) => {
+    s.data = generateRandomData(s.complexity);
+  });
+};
 
 export const setComplexity = (complexity: number) => {
-  setWave({ complexity, data: generateRandomData(complexity) });
+  setWave((s) => {
+    s.complexity = complexity;
+    s.data = generateRandomData(complexity);
+  });
 };
 
 export const handleDownload = () => downloadSvg(createSvgMarkup(wavePath()));

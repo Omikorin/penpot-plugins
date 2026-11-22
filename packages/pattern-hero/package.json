@@ -18,13 +18,14 @@
   "license": "AGPL-3.0-only",
   "dependencies": {
     "@penpot/plugin-styles": "catalog:",
+    "@solidjs/web": "catalog:",
     "solid-js": "catalog:"
   },
   "devDependencies": {
     "@penpot/plugin-types": "catalog:",
+    "@solidjs/vite-plugin": "catalog:",
     "typescript": "catalog:",
     "vite": "catalog:",
-    "vite-live-preview": "catalog:",
-    "vite-plugin-solid": "catalog:"
+    "vite-live-preview": "catalog:"
   }
 }

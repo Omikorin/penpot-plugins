@@ -1,4 +1,4 @@
-import { createStore } from 'solid-js/store';
+import { createStore } from 'solid-js';
 import type { PluginConfig } from '@/common/types';
 import {
   ColumnsIcon,
@@ -36,7 +36,9 @@ export const handleInput = <K extends keyof PluginConfig>(
   key: K,
   value: PluginConfig[K],
 ) => {
-  setConfig(key, value);
+  setConfig((s) => {
+    s[key] = value;
+  });
 };
 
 export const handleSubmit = () => {

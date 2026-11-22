@@ -1,4 +1,5 @@
-import type { JSX, VoidComponent } from 'solid-js';
+import type { JSX } from '@solidjs/web';
+import type { VoidComponent } from 'solid-js';
 
 export const ChevronUpIcon: VoidComponent<JSX.IntrinsicElements['svg']> = (
   props,

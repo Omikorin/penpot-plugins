@@ -1,4 +1,4 @@
-import { type Component, createSignal, onCleanup, onMount } from 'solid-js';
+import { type Component, createSignal, onSettled } from 'solid-js';
 import type { PluginEvent } from '@/common/types';
 import { Buttons, Controls, Preview } from '@/ui/components/features';
 import { Footer, Header } from '@/ui/components/layout';
@@ -14,12 +14,9 @@ const App: Component = () => {
     if (event.data.type === 'theme') setTheme(event.data.content);
   }
 
-  onMount(() => {
+  onSettled(() => {
     window.addEventListener('message', handleThemeChange);
-  });
-
-  onCleanup(() => {
-    window.removeEventListener('message', handleThemeChange);
+    return () => window.removeEventListener('message', handleThemeChange);
   });
 
   return (

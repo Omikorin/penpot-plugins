@@ -26,14 +26,16 @@ export const SegmentedControl = <T extends string>(
           <li>
             <button
               type="button"
-              aria-pressed={props.value === option.value}
+              aria-pressed={props.value === option.value ? 'true' : 'false'}
               aria-label={option.label}
               title={option.label}
-              class={styles.tab}
-              classList={{
-                [styles.active]: props.value === option.value,
-                [styles.compact]: props.compact,
-              }}
+              class={[
+                styles.tab,
+                {
+                  [styles.active]: props.value === option.value,
+                  [styles.compact]: props.compact,
+                },
+              ]}
               onClick={() => props.onChange(option.value)}
             >
               <option.icon />
