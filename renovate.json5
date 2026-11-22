@@ -1,0 +1,42 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    "abandonments:recommended",
+    "group:allNonMajor",
+
+    // default presets
+    ":configMigration",
+    // ":enablePreCommit", // waiting for prek support
+    ":enableVulnerabilityAlerts",
+
+    // digests
+    "docker:pinDigests",
+    "helpers:pinGitHubActionDigestsToSemver",
+
+    // schedule
+    "schedule:monthly",
+    ":maintainLockFilesMonthly"
+  ],
+  "rangeStrategy": "update-lockfile",
+  "minimumReleaseAge": "7 days",
+  "prCreation": "immediate",
+  "prHourlyLimit": 0,
+  "prConcurrentLimit": 0,
+  "labels": [
+    "dependencies"
+  ],
+  "suppressNotifications": [
+    "prEditedNotification"
+  ],
+  "packageRules": [
+    // pre-commit prek tool
+    {
+      "groupName": "prek dependencies",
+      "matchManagers": [
+        "pre-commit" // waiting for prek support
+      ],
+      "description": "Update of prek dependencies"
+    }
+  ]
+}
