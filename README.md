@@ -29,7 +29,7 @@ bun run build:waves
 
 Next, install the plugin using this link:
 
-```
+```text
 http://localhost:4400/manifest.local.json
 ```
 
