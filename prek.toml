@@ -1,0 +1,40 @@
+minimum_prek_version = "0.5.11"
+
+exclude = { glob = ["LICENSE", "mise.lock", "bun.lock"] }
+
+[update]
+cooldown_days = 7
+freeze = true
+include_tags = "v*"
+exclude_tags = ["*-{alpha,beta,rc}*"]
+repos = { "https://github.com/python-jsonschema/check-jsonschema" = { include_tags = "*" } }
+
+[[repos]]
+repo = "builtin"
+hooks = [
+  { id = "check-merge-conflict" },
+  { id = "trailing-whitespace" },
+  { id = "end-of-file-fixer" },
+  { id = "mixed-line-ending" },
+  { id = "check-json" },
+  { id = "check-json5" },
+  { id = "check-toml" },
+  { id = "check-yaml" },
+]
+
+[[repos]]
+repo = "https://github.com/python-jsonschema/check-jsonschema"
+rev = "a76b92851fc9eede9f9bc4073eb55202f34eb0df"  # frozen: 0.39.0
+hooks = [
+  { id = "check-github-actions" },
+  { id = "check-github-workflows" },
+  { id = "check-renovate", additional_dependencies = ['json5'] },
+]
+
+# zizmor detects security vulnerabilities in GitHub Actions workflows
+[[repos]]
+repo = "https://github.com/zizmorcore/zizmor-pre-commit"
+rev = "06a39750ec31860bb44f2acf67182c40016cd1e7"  # frozen: v1.32.0
+hooks = [
+  { id = "zizmor", args = ["--no-progress", "--fix=unsafe-only"] },
+]
