@@ -13,8 +13,11 @@
   "scripts": {
     "dev": "vite build --watch",
     "build": "tsc && vite build",
+    "format": "oxfmt src",
+    "format:check": "oxfmt --check src",
     "lint": "oxlint --fix src",
-    "format": "oxfmt src"
+    "lint:check": "oxlint src",
+    "typecheck": "tsc -b"
   },
   "dependencies": {
     "@penpot/plugin-styles": "catalog:",

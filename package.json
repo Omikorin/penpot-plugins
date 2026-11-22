@@ -23,11 +23,16 @@
     "dev:waves": "bun run --filter 'waves-generator' dev",
     "install:waves": "bun install --filter 'waves-generator'",
     "format": "bun run --filter '*' format",
-    "lint": "bun run --filter '*' lint"
+    "format:check": "bun run --filter '*' format:check",
+    "lint": "bun run --filter '*' lint",
+    "lint:check": "bun run --filter '*' lint:check",
+    "typecheck": "bun run --filter '*' typecheck",
+    "check": "bun run lint:check && bun run format:check && bun run typecheck"
   },
   "devDependencies": {
     "oxfmt": "^0.79.0",
     "oxlint": "^1.94.0",
+    "typescript": "catalog:",
     "vite": "catalog:"
   },
   "packageManager": "bun@1.4.5",
