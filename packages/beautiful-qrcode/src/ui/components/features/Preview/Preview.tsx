@@ -26,7 +26,6 @@ export const Preview: Component = () => {
           qr.append(container);
         }}
         class={styles.preview}
-        role="img"
         aria-label="QR code preview"
       />
     </div>
