@@ -3,14 +3,12 @@ import { type Component, createSignal, onSettled } from 'solid-js';
 import type { PluginEvent } from '@/common/types';
 import { Buttons, Controls, Preview } from '@/ui/components/features';
 import { Footer, Header } from '@/ui/components/layout';
+import { getInitialTheme } from '@/ui/utils/theme';
 
 import styles from './App.module.css';
 
 const App: Component = () => {
-  const searchParams = new URLSearchParams(window.location.search);
-  const initialTheme = searchParams.get('theme') ?? 'light';
-
-  const [theme, setTheme] = createSignal(initialTheme);
+  const [theme, setTheme] = createSignal(getInitialTheme());
 
   function handleThemeChange(event: MessageEvent<PluginEvent>) {
     if (event.data.type === 'theme') setTheme(event.data.content);
