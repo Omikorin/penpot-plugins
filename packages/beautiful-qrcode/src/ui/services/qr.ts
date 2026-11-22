@@ -40,6 +40,9 @@ export const readFileAsDataURL = (file: File): Promise<string> =>
   new Promise((resolve, reject) => {
     const reader = new FileReader();
     reader.onload = () => resolve(reader.result as string);
-    reader.onerror = () => reject(reader.error);
+    reader.onerror = () => {
+      const error = reader.error;
+      reject(error instanceof Error ? error : new Error('Failed to read file as data URL'));
+    };
     reader.readAsDataURL(file);
   });
