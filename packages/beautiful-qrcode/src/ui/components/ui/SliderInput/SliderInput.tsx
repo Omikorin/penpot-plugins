@@ -1,5 +1,7 @@
 import { createUniqueId, type VoidComponent } from 'solid-js';
+
 import { clamp } from '@/ui/utils/math';
+
 import styles from './SliderInput.module.css';
 
 interface SliderInputProps {

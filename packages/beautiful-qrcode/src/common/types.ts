@@ -3,11 +3,7 @@ import type { FileExtension, GradientType } from 'qr-code-styling';
 
 export type FillType = 'single' | GradientType;
 
-export type ElementType =
-  | 'background'
-  | 'dots'
-  | 'cornersDot'
-  | 'cornersSquare';
+export type ElementType = 'background' | 'dots' | 'cornersDot' | 'cornersSquare';
 
 export interface QRElement {
   fill: FillType;

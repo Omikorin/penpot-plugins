@@ -1,7 +1,9 @@
 import { type Component, createSignal, onSettled } from 'solid-js';
+
 import type { PluginEvent } from '@/common/types';
 import { Buttons, Controls, Preview } from '@/ui/components/features';
 import { Footer, Header } from '@/ui/components/layout';
+
 import styles from './App.module.css';
 
 const App: Component = () => {

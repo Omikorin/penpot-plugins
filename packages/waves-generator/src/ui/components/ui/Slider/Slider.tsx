@@ -1,5 +1,6 @@
 import type { JSX } from '@solidjs/web';
 import type { VoidComponent } from 'solid-js';
+
 import styles from './Slider.module.css';
 
 interface SliderProps {

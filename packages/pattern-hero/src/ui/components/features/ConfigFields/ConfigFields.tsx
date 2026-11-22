@@ -1,6 +1,8 @@
 import { For } from 'solid-js';
+
 import { NumberInput, Toggle } from '@/ui/components/ui';
 import { config, handleInput, settingsManifest } from '@/ui/stores/config';
+
 import styles from './ConfigFields.module.css';
 
 export const ConfigFields = () => {

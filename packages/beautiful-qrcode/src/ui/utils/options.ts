@@ -1,13 +1,9 @@
 import type { Options } from 'qr-code-styling';
+
 import type { ElementType } from '@/common/types';
 import type { QRState } from '@/ui/stores/qr';
 
-const elementKeys: ElementType[] = [
-  'background',
-  'dots',
-  'cornersDot',
-  'cornersSquare',
-];
+const elementKeys: ElementType[] = ['background', 'dots', 'cornersDot', 'cornersSquare'];
 
 export const buildOptions = (state: QRState): Options => {
   const options: Options = {
@@ -32,9 +28,7 @@ export const buildOptions = (state: QRState): Options => {
             type: style,
             gradient: {
               type: element.fill,
-              rotation: element.rotation
-                ? element.rotation * (Math.PI / 180)
-                : 0,
+              rotation: element.rotation ? element.rotation * (Math.PI / 180) : 0,
               colorStops: [
                 { offset: 0, color: element.color },
                 { offset: 1, color: element.colorSecondary ?? '#ffffff' },

@@ -1,4 +1,5 @@
 import type { Component } from 'solid-js';
+
 import type { CurveType, DirectionType } from '@/common/types';
 import {
   ChevronDownIcon,
@@ -10,18 +11,9 @@ import {
   StepIcon,
   WaveIcon,
 } from '@/ui/components/icons';
-import {
-  SegmentedControl,
-  type SegmentedOption,
-  Slider,
-} from '@/ui/components/ui';
-import {
-  randomize,
-  setComplexity,
-  setCurve,
-  setDirection,
-  wave,
-} from '@/ui/stores/wave';
+import { SegmentedControl, type SegmentedOption, Slider } from '@/ui/components/ui';
+import { randomize, setComplexity, setCurve, setDirection, wave } from '@/ui/stores/wave';
+
 import styles from './Controls.module.css';
 
 const curveOptions: SegmentedOption<CurveType>[] = [
@@ -59,12 +51,7 @@ export const Controls: Component = () => (
       startIcon={<ComplexityLowIcon />}
       endIcon={<ComplexityHighIcon />}
     />
-    <button
-      type="button"
-      class={styles.randomize}
-      aria-label="Randomize waves"
-      onClick={randomize}
-    >
+    <button type="button" class={styles.randomize} aria-label="Randomize waves" onClick={randomize}>
       <RandomizeIcon />
     </button>
   </div>

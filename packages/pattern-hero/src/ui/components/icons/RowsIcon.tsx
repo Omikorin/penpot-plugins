@@ -1,9 +1,7 @@
 import type { JSX } from '@solidjs/web';
 import type { VoidComponent } from 'solid-js';
 
-export const RowsIcon: VoidComponent<JSX.IntrinsicElements['svg']> = (
-  props,
-) => {
+export const RowsIcon: VoidComponent<JSX.IntrinsicElements['svg']> = (props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

@@ -1,16 +1,12 @@
 import type { Shape } from '@penpot/plugin-types';
 
-export const createClones = (
-  gridLength: number,
-  shouldRepeat: boolean,
-): Shape[] => {
+export const createClones = (gridLength: number, shouldRepeat: boolean): Shape[] => {
   // filtering was added because of penpot/penpot#5507
   // issue: https://github.com/penpot/penpot/issues/5507
   const filteredSelection = penpot.selection
     .filter((shape) => {
       return (
-        !shape.isComponentInstance() ||
-        !(shape.isComponentInstance() && !shape.isComponentRoot())
+        !shape.isComponentInstance() || !(shape.isComponentInstance() && !shape.isComponentRoot())
       );
     })
     .map((shape) => shape.clone());
@@ -38,11 +34,7 @@ export const cleanupSelection = () => {
   }
 };
 
-export const finalizeSelection = (
-  nodes: Shape[],
-  shouldGroup: boolean,
-  name: string,
-) => {
+export const finalizeSelection = (nodes: Shape[], shouldGroup: boolean, name: string) => {
   if (shouldGroup) {
     const group = penpot.group(nodes);
     if (!group) return;

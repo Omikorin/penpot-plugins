@@ -1,5 +1,7 @@
 import type { ParentComponent } from 'solid-js';
+
 import { ChevronDownIcon } from '@/ui/components/icons';
+
 import styles from './Accordion.module.css';
 
 interface AccordionProps {

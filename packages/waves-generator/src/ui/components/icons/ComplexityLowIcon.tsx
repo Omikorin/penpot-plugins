@@ -1,9 +1,7 @@
 import type { JSX } from '@solidjs/web';
 import type { VoidComponent } from 'solid-js';
 
-export const ComplexityLowIcon: VoidComponent<JSX.IntrinsicElements['svg']> = (
-  props,
-) => (
+export const ComplexityLowIcon: VoidComponent<JSX.IntrinsicElements['svg']> = (props) => (
   <svg width="20" height="20" viewBox="0 0 16 16" {...props}>
     <title>Low complexity</title>
     <path

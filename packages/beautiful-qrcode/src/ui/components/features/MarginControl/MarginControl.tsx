@@ -1,4 +1,5 @@
 import type { Component } from 'solid-js';
+
 import { SliderInput } from '@/ui/components/ui';
 import { qrState, setMargin } from '@/ui/stores/qr';
 

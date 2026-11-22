@@ -1,4 +1,5 @@
 import { createUniqueId, type ParentComponent } from 'solid-js';
+
 import styles from './Toggle.module.css';
 
 interface ToggleProps {

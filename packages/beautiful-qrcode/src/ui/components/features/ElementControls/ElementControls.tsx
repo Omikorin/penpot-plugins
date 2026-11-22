@@ -1,4 +1,5 @@
 import { type Component, createUniqueId, Show } from 'solid-js';
+
 import type { ElementType, FillType } from '@/common/types';
 import { Select, type SelectOption, SliderInput } from '@/ui/components/ui';
 import {
@@ -8,6 +9,7 @@ import {
   setElementRotation,
   setElementStyle,
 } from '@/ui/stores/qr';
+
 import styles from './ElementControls.module.css';
 
 const fillOptions: SelectOption<FillType>[] = [
@@ -66,9 +68,7 @@ export const ElementControls: Component<ElementControlsProps> = (props) => {
               class={styles.picker}
               aria-label="Gradient second color"
               value={element().colorSecondary ?? '#ffffff'}
-              onInput={(e) =>
-                setElementColor(props.type, e.currentTarget.value, true)
-              }
+              onInput={(e) => setElementColor(props.type, e.currentTarget.value, true)}
             />
           </Show>
         </div>

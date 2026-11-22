@@ -1,23 +1,21 @@
 import { type Component, Show } from 'solid-js';
+
 import { TrashIcon, UploadIcon } from '@/ui/components/icons';
 import { SliderInput } from '@/ui/components/ui';
 import { readFileAsDataURL } from '@/ui/services/qr';
 import { qrState, removeLogo, setLogo, setLogoMargin } from '@/ui/stores/qr';
+
 import styles from './LogoControl.module.css';
 
 const MAX_FILENAME_LENGTH = 30;
 
 const shortenFilename = (name: string) =>
-  name.length > MAX_FILENAME_LENGTH
-    ? `${name.slice(0, MAX_FILENAME_LENGTH - 1)}...`
-    : name;
+  name.length > MAX_FILENAME_LENGTH ? `${name.slice(0, MAX_FILENAME_LENGTH - 1)}...` : name;
 
 export const LogoControl: Component = () => {
-  let fileInput!: HTMLInputElement;
+  let fileInput: HTMLInputElement | undefined;
 
-  const handleFile = async (
-    event: Event & { currentTarget: HTMLInputElement },
-  ) => {
+  const handleFile = async (event: Event & { currentTarget: HTMLInputElement }) => {
     const file = event.currentTarget.files?.[0];
     if (!file) return;
 
@@ -35,14 +33,16 @@ export const LogoControl: Component = () => {
 
   const handleRemove = () => {
     removeLogo();
-    fileInput.value = '';
+    if (fileInput) fileInput.value = '';
   };
 
   return (
     <div>
       <span class="body-s">Logo</span>
       <input
-        ref={fileInput}
+        ref={(el) => {
+          fileInput = el;
+        }}
         type="file"
         accept="image/*"
         class={styles.hiddenInput}
@@ -58,7 +58,7 @@ export const LogoControl: Component = () => {
               class={styles.upload}
               aria-label="Upload logo"
               data-appearance="secondary"
-              onClick={() => fileInput.click()}
+              onClick={() => fileInput?.click()}
             >
               <UploadIcon />
               <span>Choose file</span>

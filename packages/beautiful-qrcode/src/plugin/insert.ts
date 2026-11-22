@@ -16,11 +16,7 @@ export const handleInsertQR = async (content: InsertEvent['content']) => {
       group.y = center.y;
     }
   } else {
-    const imageData = await penpot.uploadMediaData(
-      name,
-      new Uint8Array(data),
-      `image/${fileType}`,
-    );
+    const imageData = await penpot.uploadMediaData(name, new Uint8Array(data), `image/${fileType}`);
 
     const shape = penpot.createRectangle();
     shape.resize(300, 300);

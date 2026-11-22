@@ -1,4 +1,5 @@
 import { type Component, createUniqueId } from 'solid-js';
+
 import { qrState, setData } from '@/ui/stores/qr';
 
 export const QRContent: Component = () => {

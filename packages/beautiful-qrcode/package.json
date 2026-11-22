@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "vite build --watch",
     "build": "tsc && vite build",
-    "lint": "biome lint --write src",
-    "format": "biome format --write src"
+    "lint": "oxlint --fix src",
+    "format": "oxfmt src"
   },
   "repository": {
     "type": "git",

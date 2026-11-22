@@ -1,4 +1,5 @@
 import { createStore } from 'solid-js';
+
 import type { PluginConfig } from '@/common/types';
 import {
   ColumnsIcon,
@@ -32,10 +33,7 @@ export const settingsManifest = {
   ],
 } as const;
 
-export const handleInput = <K extends keyof PluginConfig>(
-  key: K,
-  value: PluginConfig[K],
-) => {
+export const handleInput = <K extends keyof PluginConfig>(key: K, value: PluginConfig[K]) => {
   setConfig((s) => {
     s[key] = value;
   });

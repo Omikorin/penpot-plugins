@@ -1,5 +1,7 @@
 import type { Component } from 'solid-js';
+
 import { InfoIcon } from '@/ui/components/icons';
+
 import styles from './Header.module.css';
 
 export const Header: Component = () => {

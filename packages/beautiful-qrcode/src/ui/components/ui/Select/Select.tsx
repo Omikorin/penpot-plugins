@@ -1,4 +1,5 @@
 import { createUniqueId, For, type VoidComponent } from 'solid-js';
+
 import styles from './Select.module.css';
 
 export interface SelectOption<T extends string> {
@@ -13,9 +14,7 @@ interface SelectProps<T extends string> {
   onChange: (value: T) => void;
 }
 
-export const Select = <T extends string>(
-  props: SelectProps<T>,
-): ReturnType<VoidComponent> => {
+export const Select = <T extends string>(props: SelectProps<T>): ReturnType<VoidComponent> => {
   const id = createUniqueId();
 
   return (

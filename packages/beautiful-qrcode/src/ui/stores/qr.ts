@@ -1,5 +1,6 @@
 import type { FileExtension } from 'qr-code-styling';
 import { createStore } from 'solid-js';
+
 import type { ElementType, FillType, QRElement } from '@/common/types';
 
 export interface QRState {
@@ -87,11 +88,7 @@ export const setElementFill = (type: ElementType, fill: FillType) => {
   });
 };
 
-export const setElementColor = (
-  type: ElementType,
-  color: string,
-  secondary = false,
-) => {
+export const setElementColor = (type: ElementType, color: string, secondary = false) => {
   setQrState((s) => {
     s.elements[type][secondary ? 'colorSecondary' : 'color'] = color;
   });

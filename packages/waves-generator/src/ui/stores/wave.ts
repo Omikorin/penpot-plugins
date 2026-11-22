@@ -1,4 +1,5 @@
 import { createStore } from 'solid-js';
+
 import type { CurveType, DirectionType } from '@/common/types';
 import { downloadSvg } from '@/ui/services/download';
 import { emitCreateWave } from '@/ui/services/messenger';
@@ -14,8 +15,7 @@ export const [wave, setWave] = createStore({
   data: generateRandomData(DEFAULT_COMPLEXITY),
 });
 
-export const wavePath = () =>
-  generateWavePath(wave.data, wave.curve, wave.direction);
+export const wavePath = () => generateWavePath(wave.data, wave.curve, wave.direction);
 
 export const setCurve = (curve: CurveType) => {
   setWave((s) => {

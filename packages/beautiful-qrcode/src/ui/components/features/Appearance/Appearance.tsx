@@ -1,7 +1,10 @@
 import type { Component } from 'solid-js';
+
 import type { SelectOption } from '@/ui/components/ui';
 import { Accordion } from '@/ui/components/ui';
+
 import { ElementControls } from '../ElementControls/ElementControls';
+
 import styles from './Appearance.module.css';
 
 const patternStyles: SelectOption<string>[] = [

@@ -1,5 +1,7 @@
 import type { Component } from 'solid-js';
+
 import { handleSubmit } from '@/ui/stores/config';
+
 import styles from './Buttons.module.css';
 
 export const Buttons: Component = () => {

@@ -1,6 +1,8 @@
 import type { Component } from 'solid-js';
+
 import { wavePath } from '@/ui/stores/wave';
 import { WAVE_COLOR, WAVE_HEIGHT, WAVE_WIDTH } from '@/ui/utils/wave';
+
 import styles from './Preview.module.css';
 
 export const Preview: Component = () => {

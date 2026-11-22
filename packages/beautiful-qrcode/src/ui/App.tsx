@@ -1,4 +1,5 @@
 import { type Component, createSignal, onSettled } from 'solid-js';
+
 import type { PluginEvent } from '@/common/types';
 import {
   Appearance,
@@ -10,6 +11,7 @@ import {
   QRContent,
 } from '@/ui/components/features';
 import { Footer } from '@/ui/components/layout';
+
 import styles from './App.module.css';
 
 const App: Component = () => {

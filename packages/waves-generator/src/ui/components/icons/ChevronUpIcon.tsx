@@ -1,9 +1,7 @@
 import type { JSX } from '@solidjs/web';
 import type { VoidComponent } from 'solid-js';
 
-export const ChevronUpIcon: VoidComponent<JSX.IntrinsicElements['svg']> = (
-  props,
-) => (
+export const ChevronUpIcon: VoidComponent<JSX.IntrinsicElements['svg']> = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="20"

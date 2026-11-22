@@ -1,11 +1,6 @@
 import { scaleLinear } from 'd3-scale';
-import {
-  area,
-  type CurveFactory,
-  curveBasis,
-  curveLinear,
-  curveStepBefore,
-} from 'd3-shape';
+import { area, type CurveFactory, curveBasis, curveLinear, curveStepBefore } from 'd3-shape';
+
 import type { CurveType, DirectionType } from '@/common/types';
 
 export const WAVE_WIDTH = 500;

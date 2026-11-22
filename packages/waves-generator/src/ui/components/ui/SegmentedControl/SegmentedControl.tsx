@@ -1,4 +1,5 @@
 import { type Component, For } from 'solid-js';
+
 import styles from './SegmentedControl.module.css';
 
 export interface SegmentedOption<T extends string> {
@@ -15,9 +16,7 @@ interface SegmentedControlProps<T extends string> {
   compact?: boolean;
 }
 
-export const SegmentedControl = <T extends string>(
-  props: SegmentedControlProps<T>,
-) => (
+export const SegmentedControl = <T extends string>(props: SegmentedControlProps<T>) => (
   <fieldset class={styles.nav}>
     <legend class="input-label-hidden">{props.label}</legend>
     <ul class={styles.list}>

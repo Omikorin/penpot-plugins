@@ -1,4 +1,5 @@
 import type { Shape } from '@penpot/plugin-types';
+
 import type { PluginConfig } from '@/common/types';
 
 export const arrangeNodesInGrid = (

@@ -1,7 +1,9 @@
 import { type Component, createEffect } from 'solid-js';
+
 import { qr } from '@/ui/services/qr';
 import { qrState } from '@/ui/stores/qr';
 import { buildOptions } from '@/ui/utils/options';
+
 import styles from './Preview.module.css';
 
 export const Preview: Component = () => {

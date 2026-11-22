@@ -1,9 +1,7 @@
 import type { JSX } from '@solidjs/web';
 import type { VoidComponent } from 'solid-js';
 
-export const WaveIcon: VoidComponent<JSX.IntrinsicElements['svg']> = (
-  props,
-) => (
+export const WaveIcon: VoidComponent<JSX.IntrinsicElements['svg']> = (props) => (
   <svg width="16" height="16" viewBox="0 0 16 16" {...props}>
     <title>Smooth wave</title>
     <path

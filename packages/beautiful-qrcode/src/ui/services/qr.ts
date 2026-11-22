@@ -1,6 +1,8 @@
 import QRCodeStyling from 'qr-code-styling';
+
 import { qrState } from '@/ui/stores/qr';
 import { buildOptions } from '@/ui/utils/options';
+
 import { emitInsertQR } from './messenger';
 
 export const qr = new QRCodeStyling(buildOptions(qrState));
