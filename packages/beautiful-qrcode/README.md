@@ -14,12 +14,14 @@ Transform ordinary QR codes into vibrant design elements directly within Penpot!
 ## 🎯 Key Features
 
 ### Customization Options
+
 - Add your brand logo to the center
 - Adjust margin (safe zone) for optimal scanning
 - Choose from 6 unique pattern styles
 - Select from 5 distinct corner styles
 
 ### Rich Styling
+
 - Single color or gradient backgrounds
 - Linear and radial gradient support
 - Full color customization
@@ -30,7 +32,8 @@ Transform ordinary QR codes into vibrant design elements directly within Penpot!
 1. Visit the [Penpot Plugins Hub](https://penpot.app/penpothub/plugins/beautiful-qr-code)
 2. Click the "Install" button for Beautiful QR Code
 3. Alternative installation: Use this manifest link in Penpot's plugin installer:
-   ```
+
+   ```text
    https://penpot-beautiful-qrcode.pages.dev/manifest.json
    ```
 
@@ -50,7 +53,8 @@ bun run build
 ```
 
 Next, install the plugin using this link:
-```
+
+```text
 http://localhost:4400/manifest.local.json
 ```
 

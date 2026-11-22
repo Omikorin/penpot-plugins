@@ -22,7 +22,8 @@ Create stunning, repeatable patterns for your designs directly within Penpot! Th
 1. Visit the [Penpot Plugins Hub](https://penpot.app/penpothub/plugins)
 2. Click the "Install" button for Pattern Hero
 3. Alternative installation: Use this manifest link in Penpot's plugin installer:
-   ```
+
+   ```text
    https://penpot-pattern-hero.pages.dev/manifest.json
    ```
 
@@ -42,7 +43,8 @@ bun run build
 ```
 
 Next, install the plugin using this link:
-```
+
+```text
 http://localhost:4400/manifest.local.json
 ```
 

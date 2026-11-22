@@ -14,11 +14,13 @@ Create beautiful, customizable wave patterns for your web designs!
 ## 🎯 Key Features
 
 ### Wave Styles
+
 - Smooth sine waves for flowing animations
 - Stepped patterns for geometric designs
 - Peaked waves for sharp, dynamic looks
 
 ### Rich Customization
+
 - Adjustable wave complexity
 - Up/down direction control
 - Quick randomize option
@@ -28,7 +30,8 @@ Create beautiful, customizable wave patterns for your web designs!
 1. Visit the [Penpot Plugins Hub](https://penpot.app/penpothub/plugins/waves-generator)
 2. Click the "Install" button for Waves Generator
 3. Alternative installation: Use this manifest link in Penpot's plugin installer:
-   ```
+
+   ```text
    https://penpot-waves-generator.pages.dev/manifest.json
    ```
 
@@ -48,7 +51,8 @@ bun run build
 ```
 
 Next, install the plugin using this link:
-```
+
+```text
 http://localhost:4400/manifest.local.json
 ```
 
@@ -57,6 +61,7 @@ http://localhost:4400/manifest.local.json
 Contributions are welcome! Feel free to submit issues and pull requests.
 
 ## 🙏 Acknowledgments
+
 Thanks to Feather Icons for their beautiful open source icons.
 
 ## 📄 License

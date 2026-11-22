@@ -1,4 +1,4 @@
-{
+﻿{
   "$schema": "https://biomejs.dev/schemas/2.6.8/schema.json",
   "vcs": { "enabled": true, "clientKind": "git", "useIgnoreFile": true },
   "files": { "ignoreUnknown": false, "includes": ["**"] },
@@ -8,7 +8,7 @@
     "indentStyle": "space"
   },
   "assist": { "actions": { "source": { "organizeImports": "on" } } },
-  "linter": { "enabled": true, "rules": { "recommended": true } },
+  "linter": { "enabled": true, "rules": { "preset": "recommended" } },
   "css": {
     "formatter": {
       "quoteStyle": "single"
