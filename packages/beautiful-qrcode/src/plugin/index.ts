@@ -3,7 +3,7 @@ import { handleInsertQR } from '@/plugin/insert';
 
 penpot.ui.open('Beautiful QR Code', `?theme=${penpot.theme}`, {
   width: 285,
-  height: 750,
+  height: 770,
 });
 
 penpot.ui.onMessage<PluginUIEvent>(async (message) => {
