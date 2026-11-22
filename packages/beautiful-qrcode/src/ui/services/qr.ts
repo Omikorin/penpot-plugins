@@ -25,7 +25,7 @@ export const insertQR = async () => {
 
 export const downloadQR = async () => {
   try {
-    const timestamp = new Date().toISOString().replace(/:/g, '-').slice(0, -5);
+    const timestamp = new Date().toISOString().replaceAll(':', '-').slice(0, -5);
 
     await qr.download({
       name: `QR-Code-${timestamp}`,

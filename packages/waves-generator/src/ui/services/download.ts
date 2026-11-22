@@ -3,7 +3,7 @@ export const downloadSvg = (markup: string) => {
   const blob = new Blob([source], { type: 'image/svg+xml;charset=utf-8' });
   const url = URL.createObjectURL(blob);
 
-  const timestamp = new Date().toISOString().replace(/:/g, '-').slice(0, -5);
+  const timestamp = new Date().toISOString().replaceAll(':', '-').slice(0, -5);
 
   const link = document.createElement('a');
   link.href = url;
