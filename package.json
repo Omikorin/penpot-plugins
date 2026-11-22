@@ -30,6 +30,7 @@
     "check": "bun run lint:check && bun run format:check && bun run typecheck"
   },
   "devDependencies": {
+    "@types/node": "catalog:",
     "oxfmt": "^0.79.0",
     "oxlint": "^1.94.0",
     "typescript": "catalog:",
@@ -39,10 +40,11 @@
   "catalog": {
     "@penpot/plugin-styles": "1.6.0",
     "@penpot/plugin-types": "1.6.0",
-    "@solidjs/web": "^2.0.3",
     "@solidjs/vite-plugin": "^3.0.1",
+    "@solidjs/web": "^2.0.3",
     "@types/d3-scale": "^4.0.9",
     "@types/d3-shape": "^3.2.0",
+    "@types/node": "^26.6.6",
     "d3-scale": "^4.0.3",
     "d3-shape": "^3.2.1",
     "qr-code-styling": "^1.9.2",
