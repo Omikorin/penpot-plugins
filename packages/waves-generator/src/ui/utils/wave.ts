@@ -42,7 +42,7 @@ export const generateWavePath = (
     .curve(curves[curve])(data);
 
   // round values for smaller output
-  return (d ?? '').replace(/-?[0-9]+\.[0-9]+/g, (n) =>
+  return (d ?? '').replace(/-?\d+\.\d+/g, (n) =>
     String(Math.round(Number.parseFloat(n) * 10) / 10),
   );
 };
