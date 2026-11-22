@@ -12,23 +12,23 @@ repos = { "https://github.com/python-jsonschema/check-jsonschema" = { include_ta
 [[repos]]
 repo = "builtin"
 hooks = [
-  { id = "check-merge-conflict" },
-  { id = "trailing-whitespace" },
-  { id = "end-of-file-fixer" },
-  { id = "mixed-line-ending" },
-  { id = "check-json" },
-  { id = "check-json5" },
-  { id = "check-toml" },
-  { id = "check-yaml" },
+  { id = "check-merge-conflict", priority = 10 },
+  { id = "trailing-whitespace", priority = 0 },
+  { id = "end-of-file-fixer", priority = 1 },
+  { id = "mixed-line-ending", priority = 2 },
+  { id = "check-json", priority = 10 },
+  { id = "check-json5", priority = 10 },
+  { id = "check-toml", priority = 10 },
+  { id = "check-yaml", priority = 10 },
 ]
 
 [[repos]]
 repo = "https://github.com/python-jsonschema/check-jsonschema"
 rev = "a76b92851fc9eede9f9bc4073eb55202f34eb0df"  # frozen: 0.39.0
 hooks = [
-  { id = "check-github-actions" },
-  { id = "check-github-workflows" },
-  { id = "check-renovate", additional_dependencies = ['json5'] },
+  { id = "check-github-actions", priority = 10 },
+  { id = "check-github-workflows", priority = 10 },
+  { id = "check-renovate", additional_dependencies = ['json5'], priority = 10 },
 ]
 
 # zizmor detects security vulnerabilities in GitHub Actions workflows
@@ -36,5 +36,35 @@ hooks = [
 repo = "https://github.com/zizmorcore/zizmor-pre-commit"
 rev = "06a39750ec31860bb44f2acf67182c40016cd1e7"  # frozen: v1.32.0
 hooks = [
-  { id = "zizmor", args = ["--no-progress", "--fix=unsafe-only"] },
+  { id = "zizmor", args = ["--no-progress", "--fix=unsafe-only"], priority = 3 },
 ]
+
+[[repos]]
+repo = "local"
+
+[[repos.hooks]]
+id = "oxlint"
+name = "oxlint"
+priority = 20
+language = "system"
+entry = "bun run lint:check"
+types_or = ["ts", "tsx", "javascript"]
+pass_filenames = false
+
+[[repos.hooks]]
+id = "oxfmt"
+name = "oxfmt"
+priority = 20
+language = "system"
+entry = "bun run format:check"
+types_or = ["ts", "tsx", "javascript", "css", "json"]
+pass_filenames = false
+
+[[repos.hooks]]
+id = "typecheck"
+name = "typecheck"
+priority = 20
+language = "system"
+entry = "bun run typecheck"
+types_or = ["ts", "tsx", "json"]
+pass_filenames = false
