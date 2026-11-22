@@ -34,13 +34,13 @@ export const cleanupSelection = () => {
   }
 };
 
-export const finalizeSelection = (nodes: Shape[], shouldGroup: boolean, name: string) => {
-  if (shouldGroup) {
-    const group = penpot.group(nodes);
-    if (!group) return;
-    group.name = name;
-    penpot.selection = [group];
-  } else {
-    penpot.selection = nodes;
-  }
+export const selectGroupedNodes = (nodes: Shape[], name: string) => {
+  const group = penpot.group(nodes);
+  if (!group) return;
+  group.name = name;
+  penpot.selection = [group];
+};
+
+export const selectUngroupedNodes = (nodes: Shape[]) => {
+  penpot.selection = nodes;
 };

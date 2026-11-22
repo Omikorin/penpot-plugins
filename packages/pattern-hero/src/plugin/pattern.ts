@@ -1,7 +1,12 @@
 import type { CreatePatternEvent } from '@/common/types';
 import { shuffleArray } from '@/common/utils';
 import { arrangeNodesInGrid } from '@/plugin/grid-layout';
-import { cleanupSelection, createClones, finalizeSelection } from '@/plugin/nodes';
+import {
+  cleanupSelection,
+  createClones,
+  selectGroupedNodes,
+  selectUngroupedNodes,
+} from '@/plugin/nodes';
 
 export const handleCreatePattern = (content: CreatePatternEvent['content']) => {
   const { config, name } = content;
@@ -24,7 +29,11 @@ export const handleCreatePattern = (content: CreatePatternEvent['content']) => {
 
     arrangeNodesInGrid(clones, config, { x, y });
 
-    finalizeSelection(clones, config.groupNodes, name);
+    if (config.groupNodes) {
+      selectGroupedNodes(clones, name);
+    } else {
+      selectUngroupedNodes(clones);
+    }
   } finally {
     penpot.history.undoBlockFinish(undoBlockId);
   }
