@@ -9,7 +9,11 @@ export const getParentOrigin = (): string | undefined => {
 
   if (!document.referrer) return undefined;
 
-  return new URL(document.referrer).origin;
+  try {
+    return new URL(document.referrer).origin;
+  } catch {
+    return undefined;
+  }
 };
 
 /** Accepts only messages sent by the Penpot window that embeds the plugin. */
@@ -17,5 +21,7 @@ export const isFromParent = (event: MessageEvent): boolean => {
   if (event.source !== window.parent) return false;
 
   const parentOrigin = getParentOrigin();
-  return parentOrigin !== undefined && event.origin === parentOrigin;
+
+  // Firefox may expose neither ancestorOrigins nor a referrer.
+  return parentOrigin === undefined || event.origin === parentOrigin;
 };

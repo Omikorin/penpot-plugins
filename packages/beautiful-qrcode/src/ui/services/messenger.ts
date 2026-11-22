@@ -3,13 +3,7 @@ import { getParentOrigin } from '@/ui/utils/messages';
 
 const emit = (message: PluginUIEvent) => {
   const parentOrigin = getParentOrigin();
-
-  if (!parentOrigin) {
-    console.error('Unable to determine the Penpot parent origin');
-    return;
-  }
-
-  parent.postMessage(message, parentOrigin);
+  parent.postMessage(message, parentOrigin ?? '*');
 };
 
 export const emitInsertQR = (content: Omit<InsertEvent['content'], 'name'>) => {
