@@ -29,7 +29,7 @@ export interface CreatePatternEvent {
 export type PluginUIEvent = CreatePatternEvent;
 
 export interface ThemeChangeEvent {
-  type: 'themechange';
+  type: 'theme';
   content: Theme;
 }
 

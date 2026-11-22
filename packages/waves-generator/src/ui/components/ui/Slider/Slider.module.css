@@ -1,0 +1,16 @@
+.container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  gap: var(--spacing-8);
+  color: var(--foreground-primary);
+}
+
+.container svg {
+  flex-shrink: 0;
+}
+
+.range {
+  width: 100%;
+}

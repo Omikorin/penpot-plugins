@@ -1,0 +1,33 @@
+.nav {
+  margin: 0;
+  border: none;
+  min-width: 0;
+  border-radius: 0.5rem;
+  padding: var(--spacing-4);
+  background-color: var(--background-secondary);
+  color: var(--foreground-primary);
+}
+
+.list {
+  display: flex;
+  gap: var(--spacing-2);
+}
+
+.tab {
+  display: flex;
+  border: none;
+  background: none;
+  color: inherit;
+  padding: 8px 12px;
+  border-radius: 0.5rem;
+  width: 100%;
+  cursor: pointer;
+}
+
+.compact {
+  padding: 6px 10px;
+}
+
+.active {
+  background: var(--background-primary);
+}

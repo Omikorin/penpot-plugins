@@ -1,24 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    {{> head }}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Waves Generator</title>
   </head>
   <body>
-    <main>
-      {{> header }}
-      <section class="container">
-        <div class="controls">
-          {{> controls/wave-type-selector }}
-          {{> controls/direction-selector }}
-          {{> controls/complexity-slider }}
-          {{> controls/randomize-button }}
-        </div>
-        {{> preview }}
-        {{> buttons}}
-      </section>
-      {{> footer }}
-    </main>
-
-    <script type="module" src="/src/main.ts"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/ui/main.tsx"></script>
   </body>
 </html>
